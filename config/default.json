@@ -4,21 +4,28 @@
   "sqlite": "../data/pepes.sqlite",
   "public": "../public/",
   "auth": {
+    "cookie": {
+      "name": "feathers-jwt",
+      "httpOnly": false,
+      "secure": false,
+      "maxAge": 1209600000
+    },
     "idField": "id",
     "token": {
+      "expiresIn": "14d",
       "secret": "Vu4CeXS54HB8hi+vwFjUuCnzAqqVpVTl13be7CfkBE6fD6Of2LsWvjkqh8LJaDZn9eYCw9TBZPZhkOkkTlO8Tw=="
     },
     "local": {},
     "facebook": {
-      "clientID": "your facebook client id",
-      "clientSecret": "your facebook client secret",
+      "clientID": "102963246777315",
+      "clientSecret": "1685576e3356269530a49b9d434a90e5",
       "permissions": {
         "scope": ["public_profile","email"]
       }
     },
     "github": {
-      "clientID": "your github client id",
-      "clientSecret": "your github client secret",
+      "clientID": "2d7623dcff559ea55017",
+      "clientSecret": "0d2140a46060c27d8ec2853955e9699473eb8a6f",
       "permissions": {
         "scope": []
       }

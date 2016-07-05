@@ -16,6 +16,9 @@ const services = require('./services');
 
 const app = feathers();
 
+// var exphbs = require('express-handlebars');
+// app.engine('.hbs', exphbs({defaultLayout: 'single', extname: '.hbs'}));
+// app.set('view engine', '.hbs');
 app.configure(configuration(path.join(__dirname, '..')));
 
 app.use(compress())

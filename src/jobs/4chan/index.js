@@ -9,7 +9,7 @@ function getNewPics() {
     let fuckscount = 0;
     for (let thread of threads) {
       if (fuckscount > 4) {
-        break;
+        break; 
       }
       fuckscount++;
       promises.push(fetch("http://a.4cdn.org/"+thread.board+"/thread/"+thread.no+".json").then(function(res) {
@@ -35,10 +35,6 @@ function getNewPics() {
     })
   });
 }
-
-// getNewPics().then(function(results){
-//   console.log(results);
-// })
 
 module.exports = {
   getNewThreads: threads.getNewThreads,

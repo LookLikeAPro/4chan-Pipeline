@@ -25,6 +25,7 @@
     "body-parser": "^1.15.0",
     "compression": "^1.6.1",
     "cors": "^2.7.1",
+    "express-handlebars": "^3.0.0",
     "feathers": "^2.0.0",
     "feathers-authentication": "^0.7.4",
     "feathers-configuration": "^0.2.2",
